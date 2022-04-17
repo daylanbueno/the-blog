@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 62%;
+}
+
 :root {
   --purple-bg: #290742;
   --dark-bg: #170027;
@@ -27,8 +31,8 @@ header {
 
 header .internal-header {
   padding-top: 64px;
-  padding-left: 13.3rem;
-  padding-right: 13.3rem;
+  padding-left: 10%;
+  padding-right: 10%;
 
   display: flex;
   justify-content: space-between;
@@ -37,21 +41,21 @@ header .internal-header {
 
 header .internal-header ul {
   display: flex;
-  gap: 32px;
+  gap: 3.2rem;
   list-style: none;
 }
 
 .internal-header ul li {
   font-family: "Roboto";
   font-style: normal;
-  font-size: 18px;
-  list-style: 21px;
+  font-size: 1.8rem;
+  list-style: 2.1rem;
 }
 
 .internal-header ul li:hover {
-    font-weight: bold;
-    border-left: 2px solid var(--green);
-    cursor: pointer;
+  font-weight: bold;
+  border-left: 2px solid var(--green);
+  cursor: pointer;
 }
 
 .internal-header input {
@@ -65,8 +69,8 @@ header .internal-header ul {
 
   border: 0;
   border-radius: 4px 0px 0px 4px;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
 }
 
 .internal-header .search {
@@ -105,8 +109,8 @@ header .internal-header ul {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 54px;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
   color: var(--button-bg);
 }
 
@@ -114,8 +118,8 @@ header .internal-header ul {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   color: var(--light-purple);
 }
 
@@ -129,8 +133,8 @@ header .internal-header ul {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   color: var(--button-bg);
   text-decoration: none;
 }
@@ -150,16 +154,16 @@ header .internal-header ul {
 }
 
 .main-content .main-section {
-    width: 569px;
-    height:600px;
+  width: 569px;
+  height: 600px;
 }
 
 .main-content section strong {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
   color: #000000;
 }
 
@@ -167,10 +171,10 @@ header .internal-header ul {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
   color: var(--purple-bg);
-  margin:15px 0px;
+  margin: 15px 0px;
 }
 .main-content section p {
   font-family: "Roboto";
@@ -182,11 +186,30 @@ header .internal-header ul {
 }
 
 .main-content section .line {
-    height: 1px;
-    background:#F2E7FA;
-    margin: 23px 0px;
+  height: 1px;
+  background: #f2e7fa;
+  margin: 23px 0px;
 }
 
 footer {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+/** Responsive ====== **/
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-content section {
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content .main-section {
+    width: 469px;
+    height: 600px;
+  }
 }
